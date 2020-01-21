@@ -9,112 +9,123 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
-    <div id="header">
-        <div id="top_info">
-            <p><i class="fa fa-envelope" aria-hidden="true">&nbsp;</i>example@example.com</p>
-            <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+1 (204)-232-2323</p>
-            <section>
-                <button id="support"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;Support</button>
-                <a><i class="fa fa-facebook social" aria-hidden="true"></i></a>
-                <a><i class="fa fa-instagram social" aria-hidden="true"></i></a>
-                <a><i class="fa fa-twitter social" aria-hidden="true"></i></a>
-                <a><i class="fa fa-linkedin social" aria-hidden="true"></i></a>
-            </section>
-        </div>
-        <div id="Navigation">
-            <img src="images/truedata.png" width="230">
-            <nav class="shift">
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            <p class="tilt">HOME</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html">
-                            <p class="tilt">ABOUT US</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="services.html" class="active">
-                            <p class="tilt">SERVICES</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html">
-                            <p class="tilt">CONTACT</p>
-                        </a>
-                    </li>
+<body onload="myFunction()" style="margin:0;">
+    <div id="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="hide-content" style="display:none;" class="animate-bottom">
+        <div id="header">
+            <div id="top_info">
+                <p><i class="fa fa-envelope" aria-hidden="true">&nbsp;</i>example@example.com</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+1 (204)-232-2323</p>
+                <section>
+                    <button id="support"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;Support</button>
+                    <a><i class="fa fa-facebook social" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-instagram social" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-twitter social" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-linkedin social" aria-hidden="true"></i></a>
+                </section>
+            </div>
+            <div id="Navigation">
+                <img src="images/truedata.png" width="230">
+                <nav class="shift">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <p class="tilt">HOME</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html">
+                                <p class="tilt">ABOUT US</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html" class="active">
+                                <p class="tilt">SERVICES</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <p class="tilt">CONTACT</p>
+                            </a>
+                        </li>
 
-                </ul>
-            </nav>
-        </div>
-        <div id="slide">
-            <h1 style="margin-top: 150px;">SERVICES</h1>
-            <p style="color: aliceblue;">HOME / SERVICES</p>
-            <button class="btn">Scrool Down</button>
-        </div>
-    </div>
-    <div id="service">
-        <div id="service_option">
-            <div class="opt">
-                <img src="Images/services/1.jpg">
-                <div class="colum_info">
-                    <h1>Phone Repair</h1>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam ...</p>
-                    <button>Read More</button>
-                </div>
+                    </ul>
+                </nav>
             </div>
-            <div class="opt">
-                <img src="Images/services/2.jpg">
-                <div class="colum_info">
-                    <h1>Tablet Repair</h1>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam ...</p>
-                    <button>Read More</button>
-                </div>
-            </div>
-            <div class="opt">
-                <img src="Images/services/3.jpeg">
-                <div class="colum_info">
-                    <h1>Laptop Repair</h1>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam ...</p>
-                    <button>Read More</button>
-                </div>
+            <div id="slide">
+                <h1 style="margin-top: 150px;">SERVICES</h1>
+                <p style="color: aliceblue;">HOME / SERVICES</p>
+                <button class="btn">Scrool Down <span><i class="fa fa-arrow-down aero-animation" aria-hidden="true"></i></span></button>
             </div>
         </div>
+        <div id="service">
+            <div id="service_option">
+                <div class="opt">
+                    <img src="Images/services/1.jpg">
+                    <div class="colum_info">
+                        <h1>Phone Repair</h1>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam ...</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+                <div class="opt">
+                    <img src="Images/services/2.jpg">
+                    <div class="colum_info">
+                        <h1>Tablet Repair</h1>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam ...</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+                <div class="opt">
+                    <img src="Images/services/3.jpeg">
+                    <div class="colum_info">
+                        <h1>Laptop Repair</h1>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam ...</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
 
-        <div id="service_option_two">
-            <div class="opt">
-                <img src="Images/services/4.jpg">
-                <div class="colum_info">
-                    <h1>Phone Repair</h1>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam ...</p>
-                    <button>Read More</button>
+            <div id="service_option_two">
+                <div class="opt">
+                    <img src="Images/services/4.jpg">
+                    <div class="colum_info">
+                        <h1>Phone Repair</h1>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam ...</p>
+                        <button>Read More</button>
+                    </div>
                 </div>
-            </div>
-            <div class="opt">
-                <img src="Images/services/5.jpg">
-                <div class="colum_info">
-                    <h1>Tablet Repair</h1>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam ...</p>
-                    <button>Read More</button>
+                <div class="opt">
+                    <img src="Images/services/5.jpg">
+                    <div class="colum_info">
+                        <h1>Tablet Repair</h1>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam ...</p>
+                        <button>Read More</button>
+                    </div>
                 </div>
-            </div>
-            <div class="opt">
-                <img src="Images/services/6.jpeg">
-                <div class="colum_info">
-                    <h1>Laptop Repair</h1>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam ...</p>
-                    <button>Read More</button>
+                <div class="opt">
+                    <img src="Images/services/6.jpeg">
+                    <div class="colum_info">
+                        <h1>Laptop Repair</h1>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam ...</p>
+                        <button>Read More</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <div id="copyright">
+            <br>
+            <p>Copyright &copy; 2020 True Data Recovery. All Rights Reserved</p>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </div>
-    <div id="copyright">
-        <br>
-        <p>Copyright &copy; 2020 True Data Recovery. All Rights Reserved</p>
-    </div>
+    <script src="js/backtotop.js"></script>
+    <script src="js/loading.js"></script>
 </body>
 
 </html>

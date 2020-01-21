@@ -9,95 +9,106 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
-    <div id="header">
-        <div id="top_info">
-            <p><i class="fa fa-envelope" aria-hidden="true">&nbsp;</i>example@example.com</p>
-            <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+1 (204)-232-2323</p>
-            <section>
-                <button id="support"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;Support</button>
-                <a><i class="fa fa-facebook social" aria-hidden="true"></i></a>
-                <a><i class="fa fa-instagram social" aria-hidden="true"></i></a>
-                <a><i class="fa fa-twitter social" aria-hidden="true"></i></a>
-                <a><i class="fa fa-linkedin social" aria-hidden="true"></i></a>
-            </section>
-        </div>
-        <div id="Navigation">
-            <img src="images/truedata.png" width="230">
-            <nav class="shift">
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            <p class="tilt">HOME</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="active">
-                            <p class="tilt">ABOUT US</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="services.html">
-                            <p class="tilt">SERVICES</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html">
-                            <p class="tilt">CONTACT</p>
-                        </a>
-                    </li>
+<body onload="myFunction()" style="margin:0;">
+    <div id="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="hide-content" style="display:none;" class="animate-bottom">
+        <div id="header">
+            <div id="top_info">
+                <p><i class="fa fa-envelope" aria-hidden="true">&nbsp;</i>example@example.com</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+1 (204)-232-2323</p>
+                <section>
+                    <button id="support"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;Support</button>
+                    <a><i class="fa fa-facebook social" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-instagram social" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-twitter social" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-linkedin social" aria-hidden="true"></i></a>
+                </section>
+            </div>
+            <div id="Navigation">
+                <img src="images/truedata.png" width="230">
+                <nav class="shift">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <p class="tilt">HOME</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="active">
+                                <p class="tilt">ABOUT US</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html">
+                                <p class="tilt">SERVICES</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <p class="tilt">CONTACT</p>
+                            </a>
+                        </li>
 
-                </ul>
-            </nav>
+                    </ul>
+                </nav>
+            </div>
+            <div id="slide">
+                <h1 style="margin-top: 150px;">ABOUT US</h1>
+                <p style="color: aliceblue;">HOME / ABOUT US</p>
+                <button class="btn">Scrool Down <span><i class="fa fa-arrow-down aero-animation" aria-hidden="true"></i></span></button>
+            </div>
         </div>
-        <div id="slide">
-            <h1 style="margin-top: 150px;">ABOUT US</h1>
-            <p style="color: aliceblue;">HOME / ABOUT US</p>
-            <button class="btn">Scrool Down</button>
+        <div id="about_page">
+            <img src="images/about-page.jpg">
+            <div id="about_page_content">
+                <h1>About Us</h1>
+                <br>
+                <p>We offer free advance diagnostic to all storage media. Just bring your storage media (hard drives, flash drives, SD cards, etc.) to our shop and we will employ all necessary diagnostic procedures, from PCB component diagnostics, PCB firmware
+                    diagnostic, Service Area diagnostic, platter surface and head crack inspection inside our Class 5 Clean Room. After the diagnostic procedures we will let you know the cost of recovering the data, and if you do not wish to proceed,
+                    there is no charge and you may simply have your disk back. You've got nothing to lose - we are here to help you!</p>
+                <button id="Readmore">Read More</button>
+            </div>
         </div>
-    </div>
-    <div id="about_page">
-        <img src="images/about-page.jpg">
-        <div id="about_page_content">
-            <h1>About Us</h1>
+        <div id="OurTeam">
+            <div id="team-icon">
+                <br>
+                <br>
+                <hr><i class="fa fa-question-circle faq-icon" aria-hidden="true"></i>
+                <hr>
+            </div>
             <br>
-            <p>We offer free advance diagnostic to all storage media. Just bring your storage media (hard drives, flash drives, SD cards, etc.) to our shop and we will employ all necessary diagnostic procedures, from PCB component diagnostics, PCB firmware
-                diagnostic, Service Area diagnostic, platter surface and head crack inspection inside our Class 5 Clean Room. After the diagnostic procedures we will let you know the cost of recovering the data, and if you do not wish to proceed, there
-                is no charge and you may simply have your disk back. You've got nothing to lose - we are here to help you!</p>
-            <button id="Readmore">Read More</button>
-        </div>
-    </div>
-    <div id="OurTeam">
-        <div id="team-icon">
             <br>
+            <h1>About Our Team</h1>
+            <p>Dolor sit amet consectetur elit eiusmod tempor dunt aliqua utas enim veniam tempore quis sed ipsum nostrud ipsum lorem amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliquat.</p>
+            <div id="teamMember">
+                <img src="images/team/1.jpg" width="300">
+                <h2>Noah Anderson</h2>
+                <h4>Data Manager</h4>
+            </div>
+            <div id="teamMember">
+                <img src="images/team/2.jpg" width="300">
+                <h2>William Stevinsons</h2>
+                <h4>Director</h4>
+            </div>
+            <div id="teamMember">
+                <img src="images/team/3.jpg" width="300">
+                <h2>James Logan</h2>
+                <h4>Support</h4>
+            </div>
+        </div>
+        <div id="copyright">
             <br>
-            <hr><i class="fa fa-question-circle faq-icon" aria-hidden="true"></i>
-            <hr>
+            <p>Copyright &copy; 2020 True Data Recovery. All Rights Reserved</p>
         </div>
-        <br>
-        <br>
-        <h1>About Our Team</h1>
-        <p>Dolor sit amet consectetur elit eiusmod tempor dunt aliqua utas enim veniam tempore quis sed ipsum nostrud ipsum lorem amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliquat.</p>
-        <div id="teamMember">
-            <img src="images/team/1.jpg" width="300">
-            <h2>Noah Anderson</h2>
-            <h4>Data Manager</h4>
-        </div>
-        <div id="teamMember">
-            <img src="images/team/2.jpg" width="300">
-            <h2>William Stevinsons</h2>
-            <h4>Director</h4>
-        </div>
-        <div id="teamMember">
-            <img src="images/team/3.jpg" width="300">
-            <h2>James Logan</h2>
-            <h4>Support</h4>
-        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </div>
-    <div id="copyright">
-        <br>
-        <p>Copyright &copy; 2020 True Data Recovery. All Rights Reserved</p>
-    </div>
+    <script src="js/backtotop.js"></script>
+    <script src="js/loading.js"></script>
 </body>
 
 </html>
