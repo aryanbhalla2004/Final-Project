@@ -17,7 +17,9 @@ body {
   position: static;
   width: 100%;
   background-image: url("../images/background.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-position: center center;
+  background-position: fixed;
   height: 685px;
   background-repeat: no-repeat; }
 
@@ -90,7 +92,7 @@ body {
   overflow: hidden; }
 
 nav {
-  margin-left: 330px; }
+  margin-left: 340px; }
   nav ul {
     list-style-type: none; }
     nav ul li a {
@@ -106,7 +108,6 @@ nav {
       color: #004A93;
       margin-left: 20px;
       transition: 0.3s;
-      margin-left: 10px;
       font-family: "Century Gothic", sans-serif; }
     nav ul li a:hover {
       background-color: #004A93;
@@ -170,20 +171,13 @@ nav {
   width: 250px;
   height: 350px;
   transform: rotate(30deg);
-  animation: moveleft 1s ease-out forwards;
-  margin-left: -100px;
+  margin-left: 30px;
   float: left;
   overflow: visible;
   position: static;
   margin-top: -90px;
   z-index: -1;
   background-color: #004A93; }
-
-@keyframes moveleft {
-  from {
-    margin-left: -200px; }
-  to {
-    margin-left: 30px; } }
 
 #sec-rotate {
   width: 200%;
@@ -287,7 +281,8 @@ nav {
 
 #about-us {
   width: 100%;
-  height: 400px;
+  height: auto;
+  max-height: 450px;
   overflow: hidden; }
   #about-us #about-rotate {
     width: 600px;
@@ -454,7 +449,8 @@ nav {
 #gallery {
   width: 100%;
   background-color: #004A93;
-  height: 800px;
+  height: auto;
+  padding-bottom: 20px;
   text-align: center; }
   #gallery h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -472,6 +468,7 @@ nav {
     -ms-flex-wrap: wrap;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 30px;
     padding: 0 4px; }
     #gallery .flex_gallery .column {
       -ms-flex: 25%;
@@ -724,14 +721,17 @@ nav {
 
 #service {
   width: 100%;
-  height: 950px; }
+  height: 102%; }
   #service #service_option,
   #service #service_option_two {
     margin-left: 80px;
-    margin-top: 40px; }
+    margin-top: 40px;
+    float: left;
+    padding-bottom: 20px; }
   #service .opt {
     float: left;
     width: 350px;
+    margin-left: 20px;
     text-align: center;
     height: 450px;
     margin-right: 20px; }
@@ -859,17 +859,254 @@ nav {
   margin-top: 20px;
   margin-right: 30px; }
 
+#col-center-teams {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px; }
+
 @media screen and (max-width: 1200px) {
-  #header {
-    border: 1px solid #000;
-    border-bottom: none;
-    position: static;
-    width: 100%;
-    background-image: url("../images/background.jpg");
-    background-size: contain;
-    height: 650px;
-    background-repeat: no-repeat; }
   nav {
     display: none; }
   #Responsive_menu {
     display: block; } }
+
+@media screen and (min-width: 1500px) {
+  nav {
+    margin-left: 30rem; }
+  #slide {
+    margin-top: 60px;
+    margin-left: 100px; }
+    #slide h1 {
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 80px;
+      line-height: 90px;
+      letter-spacing: 5px; }
+  #text {
+    margin-left: 150px; }
+  #about-us #about-rotate {
+    width: 700px;
+    margin-top: -225px;
+    height: 730px; }
+  #about-us #about_text {
+    margin-left: 250px;
+    margin-top: 80px;
+    width: 900px; }
+    #about-us #about_text p {
+      width: 800px; }
+  #rotate {
+    margin-left: 110px;
+    float: left;
+    overflow: visible;
+    position: static;
+    margin-top: -90px;
+    z-index: -1;
+    background-color: #004A93; }
+  #faq #faq_header {
+    margin-left: 200px; }
+  #faq #faq_form {
+    margin-right: 200px; }
+  #about_page img {
+    margin-left: 100px; }
+  #about_page #about_page_content {
+    width: 700px;
+    margin-left: 600px;
+    margin-top: 60px; }
+  #service #service_option,
+  #service #service_option_two {
+    margin-left: 140px;
+    margin-top: 40px;
+    float: left;
+    padding-bottom: 20px; }
+  #contact #contact_info {
+    width: 400px;
+    margin-left: 200px; } }
+
+@media screen and (min-width: 1700px) {
+  nav {
+    margin-left: 40rem; }
+  #slide {
+    margin-top: 60px;
+    margin-left: 150px; }
+  #text {
+    margin-left: 250px; }
+  #about-us #about_text {
+    margin-left: 350px;
+    width: 900px; }
+  #rotate {
+    margin-left: 190px;
+    float: left;
+    overflow: visible;
+    position: static;
+    margin-top: -90px;
+    z-index: -1;
+    background-color: #004A93; }
+  #faq #faq_header {
+    margin-left: 250px; }
+  #faq #faq_form {
+    margin-right: 250px; }
+  #about_page img {
+    margin-left: 200px; }
+  #about_page #about_page_content {
+    width: 700px;
+    margin-left: 750px;
+    margin-top: 60px; }
+  #service #service_option,
+  #service #service_option_two {
+    margin-left: 240px;
+    margin-top: 40px;
+    float: left;
+    padding-bottom: 20px; }
+  #contact #contact_info {
+    width: 400px;
+    margin-left: 250px; } }
+
+@media screen and (min-width: 1900px) {
+  nav {
+    margin-left: 45rem; }
+  #slide {
+    margin-top: 60px;
+    margin-left: 200px; }
+    #slide h1 {
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 80px;
+      line-height: 90px;
+      letter-spacing: 5px; }
+  #text {
+    margin-left: 350px; }
+  #about-us #about-rotate {
+    width: 700px;
+    margin-top: -225px;
+    height: 730px; }
+  #about-us #about_text {
+    margin-left: 450px;
+    margin-top: 80px;
+    width: 900px; }
+    #about-us #about_text p {
+      width: 800px; }
+  #rotate {
+    margin-left: 270px;
+    float: left;
+    overflow: visible;
+    position: static;
+    margin-top: -90px;
+    z-index: -1;
+    background-color: #004A93; }
+  #faq #faq_header {
+    margin-left: 300px; }
+  #faq #faq_form {
+    margin-right: 300px; }
+  #about_page img {
+    margin-left: 350px; }
+  #about_page #about_page_content {
+    width: 700px;
+    margin-left: 900px;
+    margin-top: 60px; }
+  #service #service_option,
+  #service #service_option_two {
+    margin-left: 340px;
+    margin-top: 40px;
+    float: left;
+    padding-bottom: 20px; }
+  #contact #contact_info {
+    width: 400px;
+    margin-left: 300px; } }
+
+@media screen and (min-width: 2050px) {
+  nav {
+    margin-left: 50rem; }
+  #slide {
+    margin-top: 60px;
+    margin-left: 250px; }
+  #text {
+    margin-left: 450px; }
+  #about-us #about-rotate {
+    width: 800px;
+    margin-top: -260px;
+    height: 850px; }
+  #about-us #about_text {
+    margin-left: 550px;
+    margin-top: 80px;
+    width: 900px; }
+    #about-us #about_text p {
+      width: 800px; }
+  #rotate {
+    margin-left: 350px;
+    float: left;
+    overflow: visible;
+    position: static;
+    margin-top: -90px;
+    z-index: -1;
+    background-color: #004A93; }
+  #faq #faq_header {
+    margin-left: 350px; }
+  #faq #faq_form {
+    margin-right: 350px; }
+  #about_page img {
+    margin-left: 500px; }
+  #about_page #about_page_content {
+    width: 700px;
+    margin-left: 1000px;
+    margin-top: 60px; }
+  #service #service_option,
+  #service #service_option_two {
+    margin-left: 440px;
+    margin-top: 40px;
+    float: left;
+    padding-bottom: 20px; }
+  #contact #contact_info {
+    width: 400px;
+    margin-left: 350px; } }
+
+@media screen and (min-width: 2250px) {
+  nav {
+    margin-left: 60rem; }
+  #slide {
+    margin-top: 60px;
+    margin-left: 300px; }
+    #slide h1 {
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 80px;
+      line-height: 90px;
+      letter-spacing: 5px; }
+  #text {
+    margin-left: 500px; }
+  #about-us #about-rotate {
+    width: 850px;
+    margin-top: -270px;
+    height: 900px; }
+  #about-us #about_text {
+    margin-left: 700px;
+    margin-top: 80px;
+    width: 900px; }
+    #about-us #about_text p {
+      width: 800px; }
+  #rotate {
+    margin-left: 390px;
+    float: left;
+    overflow: visible;
+    position: static;
+    margin-top: -90px;
+    z-index: -1;
+    background-color: #004A93; }
+  #faq #faq_header {
+    margin-left: 550px; }
+  #faq #faq_form {
+    margin-right: 550px; }
+  #about_page img {
+    margin-left: 600px; }
+  #about_page #about_page_content {
+    width: 700px;
+    margin-left: 1100px;
+    margin-top: 60px; }
+  #service #service_option,
+  #service #service_option_two {
+    margin-left: 540px;
+    margin-top: 40px;
+    float: left;
+    padding-bottom: 20px; }
+  #contact #contact_info {
+    width: 400px;
+    margin-left: 400px; } }
