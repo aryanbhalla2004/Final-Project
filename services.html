@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>True Data Recovery | Home Page</title>
+    <title>True Data Recovery | Service</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,6 +10,7 @@
 </head>
 
 <body onload="myFunction()" style="margin:0;">
+    <!-- loading animation-->
     <div id="lds-ring">
         <div></div>
         <div></div>
@@ -19,18 +20,23 @@
     <div id="hide-content" style="display:none;" class="animate-bottom">
         <div id="header">
             <div id="top_info">
-                <p><i class="fa fa-envelope" aria-hidden="true">&nbsp;</i>example@example.com</p>
-                <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+1 (204)-232-2323</p>
+                <p><i class="fa fa-envelope" aria-hidden="true">&nbsp;</i>info@truedata.ca</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+1 (204)-808-6518</p>
                 <section>
-                    <button id="support"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;Support</button>
-                    <a><i class="fa fa-facebook social" aria-hidden="true"></i></a>
-                    <a><i class="fa fa-instagram social" aria-hidden="true"></i></a>
-                    <a><i class="fa fa-twitter social" aria-hidden="true"></i></a>
-                    <a><i class="fa fa-linkedin social" aria-hidden="true"></i></a>
+                    <!-- Social Media Icon and Support -->
+                    <button id="support" onclick="location.href ='contact.html' "><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;Support</button>
+                    <a href="#"><i class="fa fa-facebook social" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram social" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter social" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin social" aria-hidden="true"></i></a>
                 </section>
             </div>
             <div id="Navigation">
-                <img src="images/truedata.png" width="230">
+                <img src="images/truedata.png" width="230" alt="Company Logo">
+                <div id="Responsive_menu">
+                    <!-- responsive menu icon-->
+                    <button id="responsive_menu_button" onclick="showMenu()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                </div>
                 <nav class="shift">
                     <ul>
                         <li>
@@ -57,6 +63,12 @@
                     </ul>
                 </nav>
             </div>
+            <nav id="responsive_nav">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact</a></li>
+            </nav>
             <div id="slide">
                 <h1 style="margin-top: 150px;">SERVICES</h1>
                 <p style="color: aliceblue;">HOME / SERVICES</p>
@@ -64,27 +76,28 @@
             </div>
         </div>
         <div id="service">
+            <!-- Service that true Data Provides-->
             <div id="service_option">
                 <div class="opt">
-                    <img src="Images/services/1.jpg">
+                    <img src="Images/services/1.jpg" alt="Images of what we do">
                     <div class="colum_info">
-                        <h1>Phone Repair</h1>
+                        <h1>Phone Recovery</h1>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam ...</p>
                         <button>Read More</button>
                     </div>
                 </div>
                 <div class="opt">
-                    <img src="Images/services/2.jpg">
+                    <img src="Images/services/2.jpg" alt="Images of what we do">
                     <div class="colum_info">
-                        <h1>Tablet Repair</h1>
+                        <h1>Flash Drive Recovery</h1>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam ...</p>
                         <button>Read More</button>
                     </div>
                 </div>
                 <div class="opt">
-                    <img src="Images/services/3.jpeg">
+                    <img src="Images/services/3.jpeg" alt="Images of what we do">
                     <div class="colum_info">
-                        <h1>Laptop Repair</h1>
+                        <h1>HDD Recovery</h1>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam ...</p>
                         <button>Read More</button>
                     </div>
@@ -92,23 +105,23 @@
             </div>
             <div id="service_option_two">
                 <div class="opt">
-                    <img src="Images/services/4.jpg">
+                    <img src="Images/services/4.jpg" alt="Images of what we do">
                     <div class="colum_info">
-                        <h1>Phone Repair</h1>
+                        <h1>Laptop Recovery</h1>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam ...</p>
                         <button>Read More</button>
                     </div>
                 </div>
                 <div class="opt">
-                    <img src="Images/services/5.jpg">
+                    <img src="Images/services/5.jpg" alt="Images of what we do">
                     <div class="colum_info">
-                        <h1>Tablet Repair</h1>
+                        <h1>RAID Drive Recovery</h1>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam ...</p>
                         <button>Read More</button>
                     </div>
                 </div>
                 <div class="opt">
-                    <img src="Images/services/6.jpeg">
+                    <img src="Images/services/6.jpeg" alt="Images of what we do">
                     <div class="colum_info">
                         <h1>Laptop Repair</h1>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam ...</p>
@@ -127,6 +140,7 @@
     </div>
     <script src="js/backtotop.js"></script>
     <script src="js/loading.js"></script>
+    <script src="js/Res_menu.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,384 @@
+#Slogan {
+    background-color: #fff;
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+}
+
+#rotate {
+    width: 250px;
+    height: 350px;
+    transform: rotate(30deg);
+    margin-left: 30px;
+    float: left;
+    overflow: visible;
+    position: static;
+    margin-top: -90px;
+    z-index: -1;
+    background-color: #004A93;
+}
+
+#sec-rotate {
+    width: 200%;
+    z-index: -1;
+    background-color: #2A3547;
+    height: 300px;
+}
+
+#text {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    margin-top: 30px;
+    font-family: "Century Gothic", sans-serif;
+    margin-top: 45px;
+    width: 1050px;
+    margin-top: 25px;
+    margin-left: 50px;
+    height: 30px;
+    P {
+        letter-spacing: 2px;
+    }
+    h1 {
+        letter-spacing: 2px;
+        font-size: 40px;
+    }
+}
+
+#what-we-do {
+    width: 100%;
+    height: 500px;
+    background-color: #FFF;
+    position: relative;
+    margin-top: -20px;
+    h1 {
+        margin-top: 10px;
+        margin-left: auto;
+        width: 300px;
+        height: 50px;
+        color: #004A93;
+        text-align: center;
+        align-content: center;
+        margin-right: auto;
+        font-family: "Century Gothic", sans-serif;
+        letter-spacing: 2px;
+    }
+    #option1 {
+        width: 250px;
+        background-color: #004A93;
+        border-radius: 5px;
+        height: 350px;
+        color: #fff;
+        margin-left: 30px;
+        p {
+            width: 230px;
+            margin-top: 20px;
+            text-align: center;
+            margin-left: auto;
+            font-family: "Century Gothic", sans-serif;
+            margin-right: auto;
+            letter-spacing: 1px;
+        }
+    }
+    #icons {
+        margin-left: auto;
+        text-align: center;
+        margin-right: auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        .icon_services {
+            color: #fff;
+            border: 3px solid #fff;
+            line-height: 100px;
+            width: 100px;
+            text-align: center;
+            font-size: 40px;
+            margin-right: 20px;
+            margin-top: 30px;
+            height: 100px;
+            border-radius: 100%;
+            transition: 0.5s;
+        }
+        .icon_services:hover {
+            color: #004A93;
+            background-color: #fff;
+        }
+        #Readmore {
+            width: 150px;
+            margin-top: 20px;
+            height: 40px;
+            background-color: #fff;
+            color: #004A93;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+            font-weight: bold;
+            font-size: 15px;
+            transition: 0.5s;
+        }
+        #Readmore:hover {
+            background-color: #004A93;
+            animation: moveright 1s ease-out forwards;
+            border: 2px solid;
+        }
+        @keyframes moveright {
+            from {
+                background-color: #fff;
+            }
+            to {
+                background-color: #fff;
+                width: 50%;
+            }
+        }
+    }
+}
+
+#about-us {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    overflow: hidden;
+    #about-rotate {
+        width: 600px;
+        height: 700px;
+        transform: rotate(30deg);
+        float: left;
+        overflow: visible;
+        margin-top: -200px;
+        margin-left: -150px;
+        display: block;
+        z-index: -100;
+        position: relative;
+        background-image: url("../images/about.jpg");
+        background-size: cover;
+    }
+    #about-sec-rotate {
+        width: 100%;
+        z-index: -200;
+        position: relative;
+        background-color: #004A93;
+        height: 600px;
+    }
+    #about_text {
+        position: absolute;
+        z-index: 1;
+        color: #fff;
+        margin-top: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 45px;
+        width: 1050px;
+        margin-top: 45px;
+        margin-left: 190px;
+        height: 30px;
+        P {
+            letter-spacing: 2px;
+            width: 600px;
+            text-align: justify;
+            margin-left: 400px;
+        }
+        h1 {
+            letter-spacing: 2px;
+            margin-left: 400px;
+        }
+        #Readmore {
+            width: 150px;
+            margin-top: 25px;
+            height: 40px;
+            margin-left: 400px;
+            background-color: #fff;
+            color: #004A93;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+            font-weight: bold;
+            font-size: 15px;
+            transition: 0.5s;
+        }
+        #Readmore:hover {
+            border: 2px solid;
+            color: #fff;
+            background-color: transparent;
+        }
+    }
+}
+
+#faq {
+    width: 100%;
+    height: 670px;
+    #faq_header {
+        float: left;
+        margin-left: 50px;
+        margin-top: 40px;
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #004A93;
+            letter-spacing: 2px;
+        }
+        P {
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 2px;
+        }
+        hr {
+            width: 40px;
+            float: left;
+            letter-spacing: 20px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    }
+    .faq-icon {
+        float: left;
+        margin-top: -25px;
+        color: #004A93;
+        font-size: 50px;
+    }
+    img {
+        transform: rotate(-18deg);
+        float: right;
+    }
+    .showquestion {
+        height: 45px;
+        margin-top: 30px;
+        width: 530px;
+        background-color: #fff;
+        border: none;
+        border-bottom: 1px solid;
+        border-color: gray;
+        transition: 0.3s;
+        p {
+            float: left;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+    .showquestion:hover {
+        color: #FFF;
+        background-color: #004A93;
+    }
+    #tilt-mms {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 50px 50px 50px;
+        border-color: transparent transparent #2A3547 transparent;
+        transform: rotate(-90deg);
+        margin-left: 50px;
+    }
+}
+
+.aero {
+    float: right;
+}
+
+#faq_form {
+    float: right;
+    margin-right: 70px;
+    width: 470px;
+    height: 570px;
+    margin-top: 30px;
+    background-color: #2A3547;
+    border-radius: 10px;
+    h1 {
+        color: #FFF;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 2px;
+        font-family: 10px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    P {
+        text-align: center;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+    }
+    form {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    input {
+        width: 400px;
+        height: 40px;
+        margin-bottom: 30px;
+        color: #fff;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+    }
+     ::placeholder {
+        color: #fff;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    textarea {
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid #fff;
+        width: 400px;
+        height: 100px;
+    }
+    #send {
+        width: 400px;
+        height: 40px;
+        border: 3px solid #fff;
+        background-color: transparent;
+        margin-top: 10px;
+        color: #fff;
+    }
+    p {
+        margin-top: 10px;
+    }
+}
+
+#gallery {
+    width: 100%;
+    background-color: #004A93;
+    height: auto;
+    padding-bottom: 20px;
+    text-align: center;
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        border-bottom: 2px solid #fff;
+        text-align: center;
+        width: 80px;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flex_gallery {
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 30px;
+        -ms-flex-wrap: wrap;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        padding: 0 4px;
+        .column {
+            -ms-flex: 25%;
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            transition: 0.3s;
+            width: 100%;
+        }
+        .column img:hover {
+            background-color: #000;
+            opacity: 0.3;
+        }
+    }
+}
+
+#answer1,
+#answer2,
+#answer3,
+#answer4,
+#answer5 {
+    width: 520px;
+    margin-top: 5px;
+    display: none;
+}

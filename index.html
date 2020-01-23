@@ -10,6 +10,7 @@
 </head>
 
 <body onload="myFunction()" style="margin:0;">
+    <!-- loading animation-->
     <div id="lds-ring">
         <div></div>
         <div></div>
@@ -19,20 +20,22 @@
     <div id="hide-content" style="display:none;" class="animate-bottom">
         <div id="header">
             <div id="top_info">
-                <p><i class="fa fa-envelope" aria-hidden="true">&nbsp;</i>example@example.com</p>
-                <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+1 (204)-232-2323</p>
+                <p><i class="fa fa-envelope" aria-hidden="true">&nbsp;</i>info@truedata.ca</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+1 (204)-808-6518</p>
                 <section>
-                    <button id="support"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;Support</button>
-                    <a><i class="fa fa-facebook social" aria-hidden="true"></i></a>
-                    <a><i class="fa fa-instagram social" aria-hidden="true"></i></a>
-                    <a><i class="fa fa-twitter social" aria-hidden="true"></i></a>
-                    <a><i class="fa fa-linkedin social" aria-hidden="true"></i></a>
+                    <!--Social Media Icos-->
+                    <button id="support" onclick="location.href ='contact.html' "><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;Support</button>
+                    <a href="#"><i class="fa fa-facebook social" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram social" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter social" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin social" aria-hidden="true"></i></a>
                 </section>
             </div>
             <div id="Navigation">
-                <img src="images/truedata.png" width="230">
+                <img src="images/truedata.png" width="230" alt="Company Logo">
                 <div id="Responsive_menu">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <!-- Responsive media icon-->
+                    <button id="responsive_menu_button" onclick="showMenu()"><i class="fa fa-bars" aria-hidden="true"></i></button>
                 </div>
                 <nav class="shift">
                     <ul>
@@ -60,185 +63,195 @@
                     </ul>
                 </nav>
             </div>
+            <div id="responsive_nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">cONTACT</a></li>
+            </div>
             <div id="slide">
                 <h1>ANY PROBLEM?</h1>
                 <h1>WE ARE HERE</h1>
                 <h1>TO HELP</h1>
                 <button class="btn">Read More</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn outline">Get Quote</button>
             </div>
-
         </div>
-        <div id="Slogan">
-            <div id="text">
-                <h1>Truedata Recovery Solutions can Recover Data </h1>
-                <p>By choosing Truedata Recovery Solutions to recover your photos, work and personal files</p>
-            </div>
-            <div id="rotate"></div>
-            <div id="sec-rotate"></div>
+    </div>
+    <div id="Slogan">
+        <div id="text">
+            <h1>Truedata Recovery Solutions can Recover Data </h1>
+            <p>By choosing Truedata Recovery Solutions to recover your photos, work and personal files</p>
         </div>
-        <div id="what-we-do">
-            <br>
-            <h1>What We Do?</h1>
-            <br>
-            <div id="icons">
+        <div id="rotate"></div>
+        <div id="sec-rotate"></div>
+    </div>
+    <!-- Four Steps and Function-->
+    <div id="what-we-do">
+        <br>
+        <h1>What We Do?</h1>
+        <br>
+        <div id="icons">
 
-                <div id="option1">
-                    <i class="fa fa-hdd-o icon_services" aria-hidden="true"></i>
-                    <p>We are locally located in Winnipeg. We have the ability to recover data from hard drives that are suffering from firmware and physical problems</p>
-                    <button id="Readmore">Read More</button>
-                </div>
-                <div id="option1">
-                    <i class="fa fa-mobile icon_services" aria-hidden="true"></i>
-                    <p>We are locally located in Winnipeg. We have the ability to recover data from hard drives that are suffering from firmware and physical problems</p>
-
-                    <button id="Readmore">Read More</button>
-                </div>
-                <div id="option1">
-                    <i class="fa fa-usb icon_services" aria-hidden="true"></i>
-                    <p>We are locally located in Winnipeg. We have the ability to recover data from hard drives that are suffering from firmware and physical problems</p>
-
-                    <button id="Readmore">Read More</button>
-                </div>
-                <div id="option1">
-                    <i class="fa fa-database icon_services" aria-hidden="true"></i>
-                    <p>We are locally located in Winnipeg. We have the ability to recover data from hard drives that are suffering from firmware and physical problems</p>
-
-                    <button id="Readmore">Read More</button>
-                </div>
-
-            </div>
-        </div>
-        <div id="About-us">
-            <div id="about_text">
-                <h1>About Us</h1>
-                <br>
-                <p>We offer free advance diagnostic to all storage media. Just bring your storage media (hard drives, flash drives, SD cards, etc.) to our shop and we will employ all necessary diagnostic procedures, from PCB component diagnostics, PCB firmware
-                    diagnostic, Service Area diagnostic, platter surface and head crack inspection inside our Class 5 Clean Room. After the diagnostic procedures we will let you know the cost of recovering the data, and if you do not wish to proceed,
-                    there is no charge and you may simply have your disk back. You've got nothing to lose - we are here to help you!</p>
+            <div id="option1">
+                <i class="fa fa-hdd-o icon_services" aria-hidden="true"></i>
+                <p>We are locally located in Winnipeg. We have the ability to recover data from hard drives that are suffering from firmware and physical problems</p>
                 <button id="Readmore">Read More</button>
             </div>
-            <div id="about-rotate"></div>
-            <div id="about-sec-rotate"></div>
+            <div id="option1">
+                <i class="fa fa-mobile icon_services" aria-hidden="true"></i>
+                <p>We will test your storage device for free, confirm which problem it has then provided you with an email or phone quote to seek your approval first.</p>
+                <button id="Readmore">Read More</button>
+            </div>
+            <div id="option1">
+                <i class="fa fa-usb icon_services" aria-hidden="true"></i>
+                <p>If you decide not to approve the quote we give you. We will return the storage media to you in the original condition. We love to help you!</p>
+                <button id="Readmore">Read More</button>
+            </div>
+            <div id="option1">
+                <i class="fa fa-database icon_services" aria-hidden="true"></i>
+                <p>The time required to recover the data can also vary due to many factors but can range from 2-3 days. based on the drive </p>
+
+                <button id="Readmore">Read More</button>
+            </div>
+
         </div>
-        <div id="faq">
-            <div id="faq_header">
+    </div>
+    <div id="About-us">
+        <div id="about_text">
+            <h1>About Us</h1>
+            <br>
+            <p>We offer free advance diagnostic to all storage media. Just bring your storage media (hard drives, flash drives, SD cards, etc.) to our shop and we will employ all necessary diagnostic procedures, from PCB component diagnostics, PCB firmware
+                diagnostic, Service Area diagnostic, platter surface and head crack inspection inside our Class 5 Clean Room. After the diagnostic procedures we will let you know the cost of recovering the data, and if you do not wish to proceed, there
+                is no charge and you may simply have your disk back. You've got nothing to lose - we are here to help you!</p>
+            <button id="Readmore">Read More</button>
+        </div>
+        <div id="about-rotate"></div>
+        <div id="about-sec-rotate"></div>
+    </div>
+    <div id="faq">
+        <div id="faq_header">
+            <br>
+            <hr><i class="fa fa-question-circle faq-icon" aria-hidden="true"></i>
+            <hr>
+            <br>
+            <br>
+            <h1>Read FAQ’s</h1>
+            <p>Your all questions are answered here about our services. </p>
+            <div id="question-Container">
+                <div class="questions">
+                    <!-- faq button that are question-->
+                    <button onclick="showAnswer1()" class="showquestion"><p>How much time does it take?</p><span class="aero"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></button>
+                    <div id="answer1">
+                        <p>We are locally located in Winnipeg. We have the ability to recover data from hard drives that are suffering from firmware and physical problems, </p>
+                    </div>
+                </div>
+                <div class="questoins">
+                    <button onclick="showAnswer2()" class="showquestion"><p>How much does it cost?</p><span class="aero"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></button>
+                    <div id="answer2">
+                        <p>We are locally located in Winnipeg. We have the ability to recover data from hard drives that are suffering from firmware and physical problems, </p>
+                    </div>
+                </div>
+                <div class="questoins">
+                    <button onclick="showAnswer3()" class="showquestion"><p>Where is it  located?</p> <span class="aero"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></button>
+                    <div id="answer3">
+                        <p>We are locally located in Winnipeg. We have the ability to recover data from hard drives that are suffering from firmware and physical problems, </p>
+                    </div>
+                </div>
+                <div class="questoins">
+                    <button onclick="showAnswer4()" class="showquestion"><p>Do you repair computers?</p> <span class="aero"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></button>
+                    <div id="answer4">
+                        <p>We are locally located in Winnipeg. We have the ability to recover data from hard drives that are suffering from firmware and physical problems, </p>
+                    </div>
+                </div>
+                <div class="questoins">
+                    <button onclick="showAnswer5()" class="showquestion"><p>Do you repair computers?</p> <span class="aero"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></button>
+                    <div id="answer5">
+                        <p>We are locally located in Winnipeg. We have the ability to recover data from hard drives that are suffering from firmware and physical problems, </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Faq form-->
+        <div id="faq_form">
+            <h1>Still have any question? Send us!</h1>
+            <form method="POST">
+                <input placeholder="Your Name" id="name" /><br>
+                <input placeholder="Your Email" id="email" /><br>
+                <input placeholder="Subject" id="subject" /><br>
+                <textarea placeholder="Your Message" id="message"></textarea><br>
+                <button type="button" value="Send Email" onclick="sendEmail()" id="send">Send</button>
+            </form>
+            <p>or</p>
+            <p>Call Us : +1 (204)-808-6518</p>
+            <div id="tilt-mms"></div>
+        </div>
+    </div>
+    <!-- gallery Flex -->
+    <div id="gallery">
+        <br>
+        <h1>Gallery</h1>
+        <div class="flex_gallery">
+            <div class="column">
+                <img src="images/gallery/6.jpg" style="width:100%" alt="Data Recovering Images & Using tool and opening HDD">
+                <img src="images/gallery/3.jpg" style="width:100%" alt="Data Recovering Images & Using tool and opening HDD">
+                <img src="images/gallery/4.jpg" style="width:100%" alt="Data Recovering Images & Using tool and opening HDD">
+            </div>
+            <div class="column">
+                <img src="images/gallery/1.jpg" style="width:100%" alt="Data Recovering Images & Using tool and opening HDD">
+                <img src="images/gallery/7.jpg" style="width:100%" alt="Data Recovering Images & Using tool and opening HDD">
+                <img src="images/gallery/8.jpg" style="width:100%" alt="Data Recovering Images & Using tool and opening HDD">
+            </div>
+            <div class="column">
+                <img src="images/gallery/5.jpg" style="width:100%" alt="Data Recovering Images & Using tool and opening HDD">
+                <img src="images/gallery/2.jpg" style="width:100%" alt="Data Recovering Images & Using tool and opening HDD">
+                <img src="images/gallery/9.jpg" style="width:100%" alt="Data Recovering Images & Using tool and opening HDD">
+            </div>
+        </div>
+    </div>
+    <!-- footer start-->
+    <div id="footer">
+        <div id="Footer_content">
+            <div id="logo-info">
+                <img src="images/truedata.png" width="230" alt="Company Logo">
                 <br>
-                <hr><i class="fa fa-question-circle faq-icon" aria-hidden="true"></i>
+                <br>
                 <hr>
-                <br>
-                <br>
-                <h1>Read FAQ’s</h1>
-                <p>Your all questions are answered here about our services. </p>
-                <div id="question-Container">
-                    <div class="questions">
-                        <button onclick="showAnswer1()" class="showquestion"><p>How much time does it take?</p><span class="aero"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></button>
-                        <div id="answer1">
-                            <p>We are locally located in Winnipeg. We have the ability to recover data from hard drives that are suffering from firmware and physical problems, </p>
-                        </div>
-                    </div>
-                    <div class="questoins">
-                        <button onclick="showAnswer2()" class="showquestion"><p>How much does it cost?</p><span class="aero"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></button>
-                        <div id="answer2">
-                            <p>We are locally located in Winnipeg. We have the ability to recover data from hard drives that are suffering from firmware and physical problems, </p>
-                        </div>
-                    </div>
-                    <div class="questoins">
-                        <button onclick="showAnswer3()" class="showquestion"><p>Where is it  located?</p> <span class="aero"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></button>
-                        <div id="answer3">
-                            <p>We are locally located in Winnipeg. We have the ability to recover data from hard drives that are suffering from firmware and physical problems, </p>
-                        </div>
-                    </div>
-                    <div class="questoins">
-                        <button onclick="showAnswer4()" class="showquestion"><p>Do you repair computers?</p> <span class="aero"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></button>
-                        <div id="answer4">
-                            <p>We are locally located in Winnipeg. We have the ability to recover data from hard drives that are suffering from firmware and physical problems, </p>
-                        </div>
-                    </div>
-                    <div class="questoins">
-                        <button onclick="showAnswer5()" class="showquestion"><p>Do you repair computers?</p> <span class="aero"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></button>
-                        <div id="answer5">
-                            <p>We are locally located in Winnipeg. We have the ability to recover data from hard drives that are suffering from firmware and physical problems, </p>
-                        </div>
-                    </div>
-                </div>
+                <p>We are locally located in Winnipeg. We have the ability to recover data from hard drives that are suffering from firmware and physical problems</p>
+                <p><i class="fa fa-home" aria-hidden="true"></i>&nbsp;723 Borebank Street Winnipeg, MB</p>
+                <p><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;Support : +1 (204)-808-6518</p>
             </div>
-            <div id="faq_form">
-                <h1>Still have any question? Send us!</h1>
-                <form method="POST">
-                    <input placeholder="Your Name" id="name" /><br>
-                    <input placeholder="Your Email" id="email" /><br>
-                    <input placeholder="Subject" id="subject" /><br>
-                    <textarea placeholder="Your Message" id="message"></textarea><br>
-                    <button type="button" value="Send Email" onclick="sendEmail()" id="send">Send</button>
+            <div id="use-links">
+                <h1>Usefull Links</h1>
+                <br>
+                <hr>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </div>
+            <div id="newsletter">
+                <h1>Get Even More</h1>
+                <br>
+                <hr>
+                <p>"Get all latest content delivered straight to your inbox."</p>
+                <form>
+                    <input id="emails" placeholder="Your Email">
+                    <button id="go_btn">GO</button>
                 </form>
-                <p>or</p>
-                <p>Call Us : +1 (204)-232-2323</p>
-                <div id="tilt-mms"></div>
             </div>
         </div>
-        <div id="gallery">
-            <br>
-            <h1>Gallery</h1>
-            <div class="flex_gallery">
-                <div class="column">
-                    <img src="images/gallery/6.jpg" style="width:100%">
-                    <img src="images/gallery/3.jpg" style="width:100%">
-                    <img src="images/gallery/4.jpg" style="width:100%">
-                </div>
-                <div class="column">
-                    <img src="images/gallery/1.jpg" style="width:100%">
-                    <img src="images/gallery/7.jpg" style="width:100%">
-                    <img src="images/gallery/8.jpg" style="width:100%">
-                </div>
-                <div class="column">
-                    <img src="images/gallery/5.jpg" style="width:100%">
-                    <img src="images/gallery/2.jpg" style="width:100%">
-                    <img src="images/gallery/9.jpg" style="width:100%">
-                </div>
-            </div>
-        </div>
-        <div id="footer">
-            <div id="Footer_content">
-                <div id="logo-info">
-                    <img src="images/truedata.png" width="230">
-                    <br>
-                    <br>
-                    <hr>
-                    <p>We are locally located in Winnipeg. We have the ability to recover data from hard drives that are suffering from firmware and physical problems</p>
-                    <p><i class="fa fa-home" aria-hidden="true"></i>&nbsp;354 DownHill Street, FL 33026</p>
-                    <p><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;Support : 1 623 475 9820</p>
-                </div>
-                <div id="use-links">
-                    <h1>Usefull Links</h1>
-                    <br>
-                    <hr>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </div>
-                <div id="newsletter">
-                    <h1>Get Even More</h1>
-                    <br>
-                    <hr>
-                    <p>"Get all latest content delivered straight to your inbox."</p>
-                    <form>
-                        <input id="emails" placeholder="Your Email">
-                        <button id="go_btn">GO</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div id="copyright">
-            <br>
-            <p>Copyright &copy; 2020 True Data Recovery. All Rights Reserved</p>
-        </div>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </div>
+    <div id="copyright">
+        <br>
+        <p>Copyright &copy; 2020 True Data Recovery. All Rights Reserved</p>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </div>
     <script src="js/backtotop.js"></script>
     <script src="js/loading.js"></script>
     <script src="js/Faq.js"></script>
     <script src="js/send.js"></script>
+    <script src="js/Res_menu.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 

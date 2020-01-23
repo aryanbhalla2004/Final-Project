@@ -1,15 +1,71 @@
 <html>
 
 <head>
-    <title>True Data Recovery | Home Page</title>
+    <title>True Data Recovery | About</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+        
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+        
+        .mySlides {
+            display: none
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        /* Slideshow container */
+        
+        .slideshow-container {
+            max-width: 500px;
+        }
+        
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+        /* Fading animation */
+        
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+
 </head>
 
 <body onload="myFunction()" style="margin:0;">
+    <!-- loading animation-->
     <div id="lds-ring">
         <div></div>
         <div></div>
@@ -19,18 +75,27 @@
     <div id="hide-content" style="display:none;" class="animate-bottom">
         <div id="header">
             <div id="top_info">
-                <p><i class="fa fa-envelope" aria-hidden="true">&nbsp;</i>example@example.com</p>
-                <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+1 (204)-232-2323</p>
+                <!--Top Infomation -->
+                <p><i class="fa fa-envelope" aria-hidden="true">&nbsp;</i>info@truedata.ca</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+1 (204)-808-6518</p>
                 <section>
-                    <button id="support"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;Support</button>
-                    <a><i class="fa fa-facebook social" aria-hidden="true"></i></a>
-                    <a><i class="fa fa-instagram social" aria-hidden="true"></i></a>
-                    <a><i class="fa fa-twitter social" aria-hidden="true"></i></a>
-                    <a><i class="fa fa-linkedin social" aria-hidden="true"></i></a>
+                    <!--Social Media Icon and Support Button-->
+                    <button id="support" onclick="location.href ='contact.html' "><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;Support</button>
+                    <a href="#"><i class="fa fa-facebook social" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram social" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter social" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin social" aria-hidden="true"></i></a>
                 </section>
             </div>
+            <!--Navigation starts-->
             <div id="Navigation">
-                <img src="images/truedata.png" width="230">
+                <!--Company Logo-->
+                <img src="images/truedata.png" width="230" alt="Company Logo">
+                <div id="Responsive_menu">
+                    <!--Responsive Nav Icon-->
+                    <button id="responsive_menu_button" onclick="showMenu()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                </div>
+                <!-- Nav Bar Starts-->
                 <nav class="shift">
                     <ul>
                         <li>
@@ -56,7 +121,9 @@
 
                     </ul>
                 </nav>
+                <!--Navbar ends-->
             </div>
+
             <div id="slide">
                 <h1 style="margin-top: 150px;">ABOUT US</h1>
                 <p style="color: aliceblue;">HOME / ABOUT US</p>
@@ -64,7 +131,31 @@
             </div>
         </div>
         <div id="about_page">
-            <img src="images/about-page.jpg">
+            <!--Slide show-->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+
+                    <a>
+                        <img src="Images/services/2.jpg" style="width:100%" alt="Workers Working">
+                    </a>
+                    <div class="text "></div>
+                </div>
+                <div class="mySlides fade">
+
+                    <a>
+                        <img src="Images/services/3.jpeg" style="width:100%" alt="Workers Working">
+                    </a>
+                    <div class="text "></div>
+                </div>
+                <div class="mySlides fade">
+
+                    <a>
+                        <img src="Images/services/4.jpg" style="width:100%" alt="Workers Working">
+                    </a>
+                    <div class="text"></div>
+                </div>
+            </div>
+            <!-- About us paragraph beside slideshow-->
             <div id="about_page_content">
                 <h1>About Us</h1>
                 <br>
@@ -74,43 +165,75 @@
                 <button id="Readmore">Read More</button>
             </div>
         </div>
-        <div id="OurTeam">
-            <div id="team-icon">
-                <br>
-                <br>
-                <hr><i class="fa fa-question-circle faq-icon" aria-hidden="true"></i>
-                <hr>
+
+    </div>
+    <!-- Team member list-->
+    <div id="OurTeam">
+        <div id="team-icon">
+            <br>
+            <br>
+            <hr><i class="fa fa-question-circle faq-icon" aria-hidden="true"></i>
+            <hr>
+        </div>
+        <br>
+        <br>
+        <h1>About Our Team</h1>
+        <p>We will test your storage device for free, confirm which problem it has then provided you with an email or phone quote to seek your approval first. We will always offer you the cheapest option that will get your data back.</p>
+        <!-- team Member list starts-->
+        <div id="col-center-teams">
+            <div id="teamMember">
+                <img src="images/team/1.jpg" width="300" alt="Team Member Pic">
+                <h2>Noah Anderson</h2>
+                <h4>Data Manager</h4>
             </div>
-            <br>
-            <br>
-            <h1>About Our Team</h1>
-            <p>Dolor sit amet consectetur elit eiusmod tempor dunt aliqua utas enim veniam tempore quis sed ipsum nostrud ipsum lorem amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliquat.</p>
-            <div id="col-center-teams">
-                <div id="teamMember">
-                    <img src="images/team/1.jpg" width="300">
-                    <h2>Noah Anderson</h2>
-                    <h4>Data Manager</h4>
-                </div>
-                <div id="teamMember">
-                    <img src="images/team/2.jpg" width="300">
-                    <h2>William Stevinsons</h2>
-                    <h4>Director</h4>
-                </div>
-                <div id="teamMember">
-                    <img src="images/team/3.jpg" width="300">
-                    <h2>James Logan</h2>
-                    <h4>Support</h4>
-                </div>
+            <div id="teamMember">
+                <img src="images/team/2.jpg" width="300" alt="Team Member Pic">
+                <h2>William Stevinsons</h2>
+                <h4>Director</h4>
+            </div>
+            <div id="teamMember">
+                <img src="images/team/3.jpg" width="300" alt="Team Member Pic">
+                <h2>James Logan</h2>
+                <h4>Support</h4>
             </div>
         </div>
-        <div id="copyright">
-            <br>
-            <p>Copyright &copy; 2020 True Data Recovery. All Rights Reserved</p>
-        </div>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <!-- team Member list ends-->
+    </div>
+    <div id="copyright">
+        <br>
+        <p>Copyright &copy; 2020 True Data Recovery. All Rights Reserved</p>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </div>
     <script src="js/backtotop.js"></script>
     <script src="js/loading.js"></script>
+    <script src="js/Res_menu.js"></script>
+    <!-- Slide Show Script-->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000);
+        }
+    </script>
+
 </body>
 
 </html>

@@ -11,6 +11,46 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden; }
 
+nav {
+  margin-left: 340px; }
+  nav ul {
+    list-style-type: none; }
+    nav ul li a {
+      float: left;
+      color: #004A93;
+      align-items: center;
+      margin-top: -40px;
+      text-decoration: none;
+      transform: rotate(30deg);
+      font-weight: bold;
+      height: 200px;
+      width: 100px;
+      color: #004A93;
+      margin-left: 20px;
+      transition: 0.3s;
+      font-family: "Century Gothic", sans-serif; }
+    nav ul li a:hover {
+      background-color: #004A93;
+      color: #fff; }
+    nav ul li .active {
+      background-color: #004A93;
+      color: #fff; }
+
+.tilt {
+  margin-top: 65px;
+  transform: rotate(-30deg);
+  text-align: center; }
+
+.tilt:hover {
+  color: #fff; }
+
+#responsive_nav {
+  width: 770px;
+  margin-left: 100px;
+  background-color: #004A93;
+  margin-left: 170px;
+  display: none; }
+
 #header {
   border: 1px solid #000;
   border-bottom: none;
@@ -90,39 +130,6 @@ body {
 
 #navigation {
   overflow: hidden; }
-
-nav {
-  margin-left: 340px; }
-  nav ul {
-    list-style-type: none; }
-    nav ul li a {
-      float: left;
-      color: #004A93;
-      align-items: center;
-      margin-top: -40px;
-      text-decoration: none;
-      transform: rotate(30deg);
-      font-weight: bold;
-      height: 200px;
-      width: 100px;
-      color: #004A93;
-      margin-left: 20px;
-      transition: 0.3s;
-      font-family: "Century Gothic", sans-serif; }
-    nav ul li a:hover {
-      background-color: #004A93;
-      color: #fff; }
-    nav ul li .active {
-      background-color: #004A93;
-      color: #fff; }
-
-.tilt {
-  margin-top: 65px;
-  transform: rotate(-30deg);
-  text-align: center; }
-
-.tilt:hover {
-  color: #fff; }
 
 #slide {
   margin-top: 60px;
@@ -484,6 +491,15 @@ nav {
       background-color: #000;
       opacity: 0.3; }
 
+#answer1,
+#answer2,
+#answer3,
+#answer4,
+#answer5 {
+  width: 520px;
+  margin-top: 5px;
+  display: none; }
+
 #footer {
   width: 100%;
   background-color: #fff;
@@ -558,20 +574,23 @@ nav {
 #about_page {
   width: 100%;
   height: 360px; }
-  #about_page img {
+  #about_page .slideshow-container {
     float: left;
+    height: 300px;
     width: 450px;
-    margin-left: 30px;
-    margin-top: -10px; }
+    margin-left: 130px;
+    margin-top: 10px; }
   #about_page #about_page_content {
-    width: 700px;
-    margin-left: 500px;
-    margin-top: 60px; }
+    margin-left: 650px;
+    margin-top: 60px;
+    width: 560px;
+    padding-bottom: 20px; }
     #about_page #about_page_content h1 {
       margin-top: 40px;
       color: #004A93; }
     #about_page #about_page_content p {
-      text-align: justify; }
+      text-align: justify;
+      width: 500px; }
     #about_page #about_page_content #Readmore {
       width: 150px;
       margin-top: 25px;
@@ -721,7 +740,7 @@ nav {
 
 #service {
   width: 100%;
-  height: 102%; }
+  height: 1000px; }
   #service #service_option,
   #service #service_option_two {
     margin-left: 80px;
@@ -821,18 +840,8 @@ nav {
 /* Add animation to "page content" */
 .animate-bottom {
   position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
   animation-name: animatebottom;
   animation-duration: 1s; }
-
-@-webkit-keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0; }
-  to {
-    bottom: 0px;
-    opacity: 1; } }
 
 @keyframes animatebottom {
   from {
@@ -842,22 +851,32 @@ nav {
     bottom: 0;
     opacity: 1; } }
 
-#answer1,
-#answer2,
-#answer3,
-#answer4,
-#answer5 {
-  width: 520px;
-  margin-top: 5px;
-  display: none; }
-
-#Responsive_menu {
+#Responsive_nav {
+  background-color: #004A93;
+  font-size: 16px;
   display: none;
-  color: #004A93;
-  font-size: 30px;
+  width: 880px;
+  margin-top: 0px;
+  height: 100px;
+  text-align: center; }
+  #Responsive_nav li {
+    list-style-type: none;
+    height: 25px;
+    width: 100%; }
+  #Responsive_nav a {
+    color: #fff;
+    margin-top: 20px;
+    height: 20px;
+    text-decoration: none; }
+
+#responsive_menu_button {
+  display: none;
   float: right;
-  margin-top: 20px;
-  margin-right: 30px; }
+  background-color: #004A93;
+  border: none;
+  margin-right: 50px;
+  margin-top: 30px;
+  color: #fff; }
 
 #col-center-teams {
   margin-left: auto;
@@ -865,11 +884,28 @@ nav {
   width: 1300px; }
 
 @media screen and (max-width: 1120px) {
+  #Responsive_nav {
+    background-color: #004A93;
+    font-size: 16px;
+    display: none;
+    width: 765px;
+    margin-top: 0px;
+    height: 100px;
+    text-align: center; }
+    #Responsive_nav li {
+      list-style-type: none;
+      height: 25px;
+      width: 100%; }
+    #Responsive_nav a {
+      color: #fff;
+      margin-top: 20px;
+      height: 20px;
+      text-decoration: none; }
   #about_page {
     text-align: center;
-    height: 600px; }
-    #about_page img {
-      margin-left: 370px;
+    height: 700px; }
+    #about_page .slideshow-container {
+      margin-left: 280px;
       margin-top: 20px;
       margin-bottom: 0px;
       margin-right: 0px;
@@ -921,7 +957,9 @@ nav {
     height: 2000px; }
   nav {
     display: none; }
-  #Responsive_menu {
+  #Responsive_nav {
+    display: none; }
+  #responsive_menu_button {
     display: block; }
   #about-us {
     max-height: 2500px; }
@@ -978,7 +1016,43 @@ nav {
         color: #fff;
         background-color: transparent; } }
 
+@media screen and (max-width: 900px) {
+  #Responsive_nav {
+    background-color: #004A93;
+    font-size: 16px;
+    display: none;
+    width: 550px;
+    margin-top: 0px;
+    height: 100px;
+    text-align: center; }
+    #Responsive_nav li {
+      list-style-type: none;
+      height: 25px;
+      width: 100%; }
+    #Responsive_nav a {
+      color: #fff;
+      margin-top: 20px;
+      height: 20px;
+      text-decoration: none; } }
+
 @media screen and (max-width: 803px) {
+  #Responsive_nav {
+    background-color: #004A93;
+    font-size: 16px;
+    display: none;
+    width: 470px;
+    margin-top: 0px;
+    height: 100px;
+    text-align: center; }
+    #Responsive_nav li {
+      list-style-type: none;
+      height: 25px;
+      width: 100%; }
+    #Responsive_nav a {
+      color: #fff;
+      margin-top: 20px;
+      height: 20px;
+      text-decoration: none; }
   #contact #contact_info {
     float: none;
     width: 100%; }
@@ -997,9 +1071,9 @@ nav {
       display: none; }
     #about_page #about_page_content {
       float: left;
-      margin-top: 0px;
+      margin-top: -280px;
       text-align: center;
-      margin-left: 40px; }
+      margin-left: 100px; }
   #service {
     height: 2800px; }
   #footer {
@@ -1109,6 +1183,23 @@ nav {
         background-color: transparent; } }
 
 @media screen and (max-width: 630px) {
+  #Responsive_nav {
+    background-color: #004A93;
+    font-size: 16px;
+    display: none;
+    width: 300px;
+    margin-top: 0px;
+    height: 100px;
+    text-align: center; }
+    #Responsive_nav li {
+      list-style-type: none;
+      height: 25px;
+      width: 100%; }
+    #Responsive_nav a {
+      color: #fff;
+      margin-top: 20px;
+      height: 20px;
+      text-decoration: none; }
   #about_page {
     text-align: center;
     height: 400px; }
@@ -1116,10 +1207,10 @@ nav {
       display: none; }
     #about_page #about_page_content {
       float: left;
-      margin-top: -20px;
+      margin-top: -250px;
       width: 400px;
       text-align: center;
-      margin-left: 100px; }
+      margin-left: 70px; }
   #footer {
     height: 600px; }
     #footer #Footer_content {
@@ -1215,6 +1306,23 @@ nav {
         background-color: transparent; } }
 
 @media screen and (max-width: 560px) {
+  #Responsive_nav {
+    background-color: #004A93;
+    font-size: 16px;
+    display: none;
+    width: 220px;
+    margin-top: 0px;
+    height: 100px;
+    text-align: center; }
+    #Responsive_nav li {
+      list-style-type: none;
+      height: 25px;
+      width: 100%; }
+    #Responsive_nav a {
+      color: #fff;
+      margin-top: 20px;
+      height: 20px;
+      text-decoration: none; }
   #col-center-teams {
     margin-left: 60px; }
   #faq_form {
@@ -1316,7 +1424,7 @@ nav {
       display: none; }
     #about_page #about_page_content {
       float: left;
-      margin-top: -20px;
+      margin-top: -250px;
       width: 350px;
       text-align: center;
       margin-left: 60px; }
@@ -1435,6 +1543,24 @@ nav {
     margin-right: 0px; } }
 
 @media screen and (max-width: 414px) {
+  #Responsive_nav {
+    background-color: #004A93;
+    font-size: 16px;
+    display: none;
+    width: 220px;
+    margin-top: 0px;
+    margin-left: 100px;
+    height: 100px;
+    text-align: center; }
+    #Responsive_nav li {
+      list-style-type: none;
+      height: 25px;
+      width: 100%; }
+    #Responsive_nav a {
+      color: #fff;
+      margin-top: 20px;
+      height: 20px;
+      text-decoration: none; }
   .social {
     width: 20px;
     font-size: 14px;
@@ -1544,7 +1670,7 @@ nav {
     margin-top: -225px;
     height: 730px; }
   #about-us #about_text {
-    margin-left: 250px;
+    margin-left: 400px;
     margin-top: 80px;
     width: 900px; }
     #about-us #about_text p {
@@ -1565,7 +1691,7 @@ nav {
     margin-left: 100px; }
   #about_page #about_page_content {
     width: 700px;
-    margin-left: 600px;
+    margin-left: 700px;
     margin-top: 60px; }
   #service #service_option,
   #service #service_option_two {
@@ -1604,7 +1730,7 @@ nav {
     margin-left: 200px; }
   #about_page #about_page_content {
     width: 700px;
-    margin-left: 750px;
+    margin-left: 900px;
     margin-top: 60px; }
   #service #service_option,
   #service #service_option_two {
@@ -1656,7 +1782,7 @@ nav {
     margin-left: 350px; }
   #about_page #about_page_content {
     width: 700px;
-    margin-left: 900px;
+    margin-left: 1000px;
     margin-top: 60px; }
   #service #service_option,
   #service #service_option_two {
@@ -1702,7 +1828,7 @@ nav {
     margin-left: 500px; }
   #about_page #about_page_content {
     width: 700px;
-    margin-left: 1000px;
+    margin-left: 1100px;
     margin-top: 60px; }
   #service #service_option,
   #service #service_option_two {
@@ -1754,7 +1880,7 @@ nav {
     margin-left: 600px; }
   #about_page #about_page_content {
     width: 700px;
-    margin-left: 1100px;
+    margin-left: 1250px;
     margin-top: 60px; }
   #service #service_option,
   #service #service_option_two {

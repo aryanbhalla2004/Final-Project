@@ -1,3 +1,4 @@
+//if on the one of the function are one it set the style value to block or else none so can be hidden
 function showAnswer1() {
     var x = document.getElementById("answer1");
     if (x.style.display === "none") {
