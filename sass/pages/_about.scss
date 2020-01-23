@@ -1,6 +1,8 @@
+// About use page Desgine
 #about_page {
     width: 100%;
     height: 360px;
+    //Slide show desgine beside the text
     .slideshow-container {
         float: left;
         height: 300px;
@@ -8,6 +10,7 @@
         margin-left: 130px;
         margin-top: 10px;
     }
+    // styling text beside slide show
     #about_page_content {
         margin-left: 650px;
         margin-top: 60px;
@@ -41,11 +44,13 @@
     }
 }
 
+//our team desgine below slide show and text
 #ourTeam {
     text-align: center;
     width: 100%;
     height: 780px;
     background-color: #004A93;
+    //desgining the full width blue box
     #team-icon {
         width: 180px;
         height: 20px;
@@ -78,6 +83,7 @@
         margin-right: 10px;
         margin-left: 10px;
     }
+    //styling team member photos and containers
     #teamMember {
         float: left;
         width: 350px;

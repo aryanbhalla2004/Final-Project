@@ -1,3 +1,4 @@
+//slogan area below slide
 #Slogan {
     background-color: #fff;
     width: 100%;
@@ -5,6 +6,7 @@
     height: 150px;
 }
 
+//rotaing the cube behing the slogan text below slide
 #rotate {
     width: 250px;
     height: 350px;
@@ -25,6 +27,7 @@
     height: 300px;
 }
 
+//styling the text in the slogan area
 #text {
     position: absolute;
     z-index: 1;
@@ -45,6 +48,7 @@
     }
 }
 
+//styling 4 steps below slogan
 #what-we-do {
     width: 100%;
     height: 500px;
@@ -133,11 +137,13 @@
     }
 }
 
+//about us information section
 #about-us {
     width: 100%;
     height: auto;
     max-height: 450px;
     overflow: hidden;
+    //rotating the about us image 
     #about-rotate {
         width: 600px;
         height: 700px;
@@ -159,6 +165,7 @@
         background-color: #004A93;
         height: 600px;
     }
+    //about us page text
     #about_text {
         position: absolute;
         z-index: 1;
@@ -201,9 +208,11 @@
     }
 }
 
+//faq styling
 #faq {
     width: 100%;
     height: 670px;
+    //styling the faq information section on the left
     #faq_header {
         float: left;
         margin-left: 50px;
@@ -269,6 +278,7 @@
     float: right;
 }
 
+//fao form on the right side
 #faq_form {
     float: right;
     margin-right: 70px;
@@ -329,6 +339,7 @@
     }
 }
 
+//styling the gallery with flex in the gallery are on the index
 #gallery {
     width: 100%;
     background-color: #004A93;
@@ -373,6 +384,7 @@
     }
 }
 
+//styling the answers
 #answer1,
 #answer2,
 #answer3,

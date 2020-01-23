@@ -1,3 +1,5 @@
+//making color var
+$primary-Color: #004A93;
 html {
     scroll-behavior: smooth;
     font-size: 100%;
@@ -15,6 +17,7 @@ body {
 }
 
 @import 'components/nav';
+//header section behind the nav bar with large blue pic
 #header {
     border: 1px solid #000;
     border-bottom: none;
@@ -28,6 +31,7 @@ body {
     background-repeat: no-repeat;
 }
 
+//email phone#, social icon and support button
 #top_info {
     border: 0px solid;
     margin-left: auto;
@@ -44,6 +48,7 @@ body {
     padding: 10px;
 }
 
+//rect the hold logo and navigation menus
 #navigation {
     border: 0px solid;
     width: 70%;
@@ -72,7 +77,7 @@ body {
 
 .social:hover {
     background-color: #fff;
-    color: #004A93;
+    color: $primary-Color;
     border: 1px solid #fff;
 }
 
@@ -80,7 +85,7 @@ body {
     float: right;
     width: 150px;
     height: 40px;
-    background-color: #004A93;
+    background-color: $primary-Color;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     border: none;
@@ -92,9 +97,10 @@ body {
 
 #support:hover {
     background-color: #fff;
-    color: #004A93;
+    color: $primary-Color;
 }
 
+//logo
 #navigation img {
     margin-top: 14px;
     margin-left: 30px;
@@ -118,14 +124,14 @@ body {
 }
 
 .bold {
-    color: #004A93;
+    color: $primary-Color;
 }
 
 .btn {
     border: none;
     background-color: #fff;
     width: 150px;
-    color: #004A93;
+    color: $primary-Color;
     height: 40px;
     margin-top: 20px;
     font-weight: bold;
@@ -146,7 +152,7 @@ body {
 
 .outline:hover {
     background-color: #fff;
-    color: #004A93;
+    color: primary-Color;
 }
 
 @import "pages/home";
@@ -154,6 +160,7 @@ body {
 @import "pages/about";
 @import "pages/contact";
 @import "pages/services";
+//when the loading is finised the page animates up
 .aero-animation {
     position: relative;
     font-size: 17px;
@@ -189,6 +196,7 @@ body {
     background-color: #555;
 }
 
+//loading circle desgine
 #lds-ring {
     position: relative;
     width: 80px;
@@ -198,6 +206,7 @@ body {
     margin-right: auto;
 }
 
+//loading circle desgine
 #lds-ring div {
     box-sizing: border-box;
     display: block;
@@ -205,24 +214,28 @@ body {
     width: 104px;
     height: 104px;
     margin: 8px;
-    border: 12px solid #004A93;
+    border: 12px solid $primary-Color;
     border-radius: 50%;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: #004A93 transparent transparent transparent;
+    border-color: $primary-Color transparent transparent transparent;
 }
 
+//loading circle desgine - animation
 #lds-ring div:nth-child(1) {
     animation-delay: -0.45s;
 }
 
+//loading circle desgine - animation
 #lds-ring div:nth-child(2) {
     animation-delay: -0.3s;
 }
 
+//loading circle desgine - animation
 #lds-ring div:nth-child(3) {
     animation-delay: -0.15s;
 }
 
+//loading circle desgine - animation
 @keyframes lds-ring {
     0% {
         transform: rotate(0deg);
@@ -232,15 +245,14 @@ body {
     }
 }
 
-
-/* Add animation to "page content" */
-
+//loading circle desgine - animation
 .animate-bottom {
     position: relative;
     animation-name: animatebottom;
     animation-duration: 1s
 }
 
+//loading circle desgine - animation
 @keyframes animatebottom {
     from {
         bottom: -100px;
@@ -252,8 +264,9 @@ body {
     }
 }
 
+//responsive menu bar desgine
 #Responsive_nav {
-    background-color: #004A93;
+    background-color: $primary-Color;
     font-size: 16px;
     display: none;
     width: 880px;
@@ -276,7 +289,7 @@ body {
 #responsive_menu_button {
     display: none;
     float: right;
-    background-color: #004A93;
+    background-color: $primary-Color;
     border: none;
     margin-right: 50px;
     margin-top: 30px;

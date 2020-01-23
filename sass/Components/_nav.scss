@@ -1,3 +1,4 @@
+//nav bar desgining
 nav {
     margin-left: 340px;
     ul {
@@ -18,10 +19,12 @@ nav {
                 transition: 0.3s;
                 font-family: "Century Gothic", sans-serif;
             }
+            //hover effect on the normal nav
             a:hover {
                 background-color: #004A93;
                 color: #fff;
             }
+            //active for assea
             .active {
                 background-color: #004A93;
                 color: #fff;
@@ -30,16 +33,19 @@ nav {
     }
 }
 
+//styling the text in "<a>" tag
 .tilt {
     margin-top: 65px;
     transform: rotate(-30deg);
     text-align: center;
 }
 
+//hover effect
 .tilt:hover {
     color: #fff;
 }
 
+//responsive nav bar desgine
 #responsive_nav {
     width: 770px;
     margin-left: 100px;
